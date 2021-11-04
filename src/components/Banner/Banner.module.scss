@@ -1,0 +1,41 @@
+.banner {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0px;
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+
+    @media (max-width: 980px) {
+      top: 100px;
+    }
+
+    @media (max-width: 650px) {
+      top: 50px;
+    }
+
+    .icon {
+      box-sizing: border-box;
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      background-color: #f7cf71;
+      text-align: center;
+      padding-top: 10px;
+
+      svg {
+        font-size: 60px;
+      }
+    }
+  }
+}
